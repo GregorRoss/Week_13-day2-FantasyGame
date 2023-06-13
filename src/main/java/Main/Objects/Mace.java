@@ -1,12 +1,13 @@
 package Main.Objects;
 
 import Main.Behaviours.IAttack;
+import Main.Player;
 
 public class Mace implements IAttack {
 
 
-    @Override
-    public String attack(String weapon) {
-        return null;
+    public void attack(Player player)
+    {
+        player.takeDamage(20);
     }
 }

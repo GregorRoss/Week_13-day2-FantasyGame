@@ -1,9 +1,11 @@
 package Main.Behaviours;
 
 
+import Main.Player;
+
 public interface IAttack {
 
 
 
-    public String attack(String weapon);
+    public void attack(Player player);
 }

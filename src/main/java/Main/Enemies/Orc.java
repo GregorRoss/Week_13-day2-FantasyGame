@@ -1,8 +1,8 @@
 package Main.Enemies;
 
-import Main.Character;
+import Main.Player;
 
-public class Orc extends Character {
+public class Orc extends Player {
     public Orc(String name, int health) {
         super(name, health);
     }

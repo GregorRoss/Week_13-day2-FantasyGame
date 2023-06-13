@@ -1,11 +1,9 @@
 package Main.Players;
 
-import Main.Behaviours.IHeal;
-import Main.Character;
-import Main.Objects.Poison;
+import Main.Player;
 
 
-public class Cleric extends Character  {
+public class Cleric extends Player {
     public Cleric(String name, int health) {
         super(name, health);
     }

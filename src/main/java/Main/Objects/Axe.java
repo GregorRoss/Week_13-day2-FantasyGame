@@ -1,15 +1,12 @@
 package Main.Objects;
 
 import Main.Behaviours.IAttack;
+import Main.Player;
 
 public class Axe implements IAttack {
 
-    public String attack() {
-        return null;
-    }
-
-    @Override
-    public String attack(String weapon) {
-        return null;
+    public void attack(Player player)
+    {
+        player.takeDamage(20);
     }
 }

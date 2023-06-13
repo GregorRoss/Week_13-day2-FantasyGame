@@ -1,25 +1,21 @@
 package Main.Players;
 
-import Main.Behaviours.IAttack;
 import Main.Objects.Club;
-
+import Main.Player;
 
 
 public class Barbarian extends Fighter{
 
     private Club club;
 
-    public Barbarian(String name, int health) {
+    public Barbarian(String name, int health, Club club) {
         super(name, health);
-
+        this.club = club;
     }
 
 
-
-    public String attack(){
-        return "Enemy attacked with " + club;
+    public void attack(Player player){
+        this.club.attack(player);
     }
-
-
 
 }
